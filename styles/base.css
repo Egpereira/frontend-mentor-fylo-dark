@@ -1,0 +1,66 @@
+:root {
+  /* Primary */
+  --dark-blue-1: hsl(217, 28%, 15%);
+  --dark-blue-2: hsl(218, 28%, 13%);
+  --dark-blue-3: hsl(216, 53%, 9%);
+  --dark-blue-4: hsl(219, 30%, 18%);
+
+  /* Accent */
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --red: hsl(0, 100%, 63%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --open-sans: 'Open Sans', sans-serif;
+  --raleway: 'Raleway', sans-serif;
+
+  --body-font-family: var(--open-sans);
+  --cta-font-family: var(--raleway);
+  --heading-font-family: var(--raleway);
+  --navigation-font-family: var(--raleway);
+
+  --body-color: var(--white);
+  --body-background-color: var(--dark-blue-2);
+
+  --cta-link-color: var(--cyan);
+  --cta-button-color: var(--white);
+  --cta-button-background-color: var(--cyan);
+}
+
+html {
+  color: var(--body-color);
+  font-family: var(--body-font-family);
+  background-color: var(--body-background-color);
+}
+
+body {
+  font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+}
+
+nav {
+  font-family: var(--navigation-font-family);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
